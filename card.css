@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap%27');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+}
+/*
+.mydiv{
+	width: 75%;
+    height: 332px;
+    background: linear-gradient(148deg, #03A9F4, #9C27B0);
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 17%;
+}*/
+
+.card{
+	position: relative;
+	width: 600px;
+	height:350px;
+	margin: 20px;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	border-radius: 20px;
+	background: linear-gradient(135deg,#d41e31,#491f8f);
+}
+
+.mydiv{
+	position: relative;
+	width: 600px;
+	height:360px;
+	background: linear-gradient(148deg, #03A9F4, #9C27B0);
+    border-radius: 7px;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 17%;
+}
+
+.card img{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+    height:380px;
+    transition: 0.75s;
+}
+
+.card:hover img{
+	left: 80%;
+	height: 495px;
+}
+
+.card .content{
+	position: relative;
+	width: 50%;
+	left: 20%;
+	padding: 20px 20px 20px 40px;
+	opacity: 0;
+	/*display: none;*/
+	visibility: hidden;
+	transition: 0.5s;
+}
+
+.card:hover .content{
+	opacity: 1;
+	visibility: visible;
+	/*display: initial;*/
+	left: 0;
+}
+
+.card .content h2{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+.card .content p{
+	color:#fff;
+}
+
+.card .content a{
+	color: #111;
+	display: inline-block;
+	position: relative;
+	padding:10px 20px;
+	border-radius: 10px;
+	background: #fff;
+	margin-top: 10px;
+	text-decoration: none;
+}
+
+@media (max-width: 951px){
+	.card{
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		transition: 0.5s;
+		align-items: flex-start;
+	}
+
+	.card:hover{
+		height: 600px;
+	}
+
+	.card: hover img{
+		left: 50%;
+		height: 350px;
+	}
+
+	.card .content{
+		width: 100%;
+		left: 0;
+		padding: 40px;
+	}
+}
+
+@media (max-width: 951px){
+
+
+
